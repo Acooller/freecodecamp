@@ -11,20 +11,20 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
       <div class="form-group">
-        <label for="name" class="input-title">Name</label>
+        <label id="name-label" for="name" class="input-title">Name</label>
         <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
       </div>
       <div class="form-group">
-        <label for="email" class="input-title">Email</label>
+        <label id="email-label" for="email" class="input-title">Email</label>
         <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
       </div>
       <div class="form-group">
-        <label for="age" class="input-title">Age (optional)</label>
-        <input type="number" id="age" class="form-control" placeholder="Age">
+        <label id="number-label" for="age" class="input-title">Age (optional)</label>
+        <input type="number" id="number" class="form-control" placeholder="Age" min="1" max="100">
       </div>
       <div class="form-group">
         <label class="input-title">Which option best describes your current role?</label>
-        <select id="current-role" class="form-control" >
+        <select id="dropdown" class="form-control" >
           <option value="" disabled selected>Select current role</option>
           <option value="student">Student</option>
           <option value="full-time-job">Full-time job</option>
@@ -61,52 +61,56 @@
           <input type="checkbox" value="frontend-projects" name="prefer" class="input-checkbox" checked>
           <label for="frontend-projects">Front-end Projects</label>
       </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="backend-projects" name="prefer" class="input-checkbox">
-          <label for="backend-projects">Back-end Projects</label>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="backend-projects" name="prefer" class="input-checkbox">
+            <label for="backend-projects">Back-end Projects</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="data-visualization" name="prefer" class="input-checkbox">
+            <label for="data-visualization">Data Visualization</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="challenges" name="prefer" class="input-checkbox" checked>
+            <label for="challenges">Challenges</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="open-source" name="prefer" class="input-checkbox">
+            <label for="open-source">Open Source</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="open-source-community" name="prefer" class="input-checkbox" checked>
+            <label for="open-source-community">Open Source Community</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="gitter-help-rooms" name="prefer" class="input-checkbox">
+            <label for="gitter-help-rooms">Gitter help rooms</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="videos" name="prefer" class="input-checkbox">
+            <label for="videos">Videos</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="city-meetups" name="prefer" class="input-checkbox">
+            <label for="city-meetups">City Meetups</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="wiki" name="prefer" class="input-checkbox">
+            <label for="wiki">Wiki</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="forum" name="prefer" class="input-checkbox">
+            <label for="forum">Forum</label>
+        </div>
+        <div class="input-checkbox-group">
+            <input type="checkbox" value="additional-courses" name="prefer" class="input-checkbox">
+            <label for="additional-courses">Additional Courses</label>
       </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="data-visualization" name="prefer" class="input-checkbox">
-          <label for="data-visualization">Data Visualization</label>
       </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="challenges" name="prefer" class="input-checkbox" checked>
-          <label for="challenges">Challenges</label>
-      </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="open-source" name="prefer" class="input-checkbox">
-          <label for="open-source">Open Source</label>
-      </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="open-source-community" name="prefer" class="input-checkbox" checked>
-          <label for="open-source-community">Open Source Community</label>
-      </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="gitter-help-rooms" name="prefer" class="input-checkbox">
-          <label for="gitter-help-rooms">Gitter help rooms</label>
-      </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="videos" name="prefer" class="input-checkbox">
-          <label for="videos">Videos</label>
-      </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="city-meetups" name="prefer" class="input-checkbox">
-          <label for="city-meetups">City Meetups</label>
-      </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="wiki" name="prefer" class="input-checkbox">
-          <label for="wiki">Wiki</label>
-      </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="forum" name="prefer" class="input-checkbox">
-          <label for="forum">Forum</label>
-      </div>
-      <div class="input-checkbox-group">
-          <input type="checkbox" value="additional-courses" name="prefer" class="input-checkbox">
-          <label for="additional-courses">Additional Courses</label>
-      </div>
-          
-      </div>
+        <div class="form-group">
+          <label class="input-title">Any comments or suggestions?</label>
+            <textarea name="comment" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+        </div>
+      <input type="submit" value="Submit" class="submit" id="submit">
     </form>
   </div>
 </body>
