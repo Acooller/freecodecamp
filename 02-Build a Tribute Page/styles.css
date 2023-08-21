@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #eee;
+  padding: 20px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  text-align: center;
+  margin-top: 40px;
+  display: block;
+}
+
+.title-text{
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+figure{
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+figcaption{
+  margin: 15px 0 5px 0;
+}
+
+img{
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.timeline-title{
+  text-align: center;
+  margin: 50px 0;
+}
+
+ul{
+  max-width: 600px;
+  line-height: 1.75rem;
+  margin: 0 auto;
+}
+
+li{
+  margin: 20px 0;
+}
+
+.timeline-year{
+  font-weight: 900;
+}
+
+blockquote{
+  font-style: italic;
+  margin: 60px auto;
+  max-width: 545px;
+  text-align: left;
+}
+
+cite{
+  display: block;
+  margin-top: 20px;
+}
