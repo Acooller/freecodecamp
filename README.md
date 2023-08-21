@@ -1,1 +1,1 @@
-在 Freecode 网站学习编程的实践案例！
+在 Freecodecamp 网站自学编程的实战案例！
